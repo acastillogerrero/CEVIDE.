@@ -1,0 +1,412 @@
+```css
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap');
+
+
+/* =========================================
+   CONFIGURACIÓN GENERAL
+   ========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+    color: #1B263B;
+}
+
+
+/* =========================================
+   ENCABEZADO
+   ========================================= */
+
+header {
+    background-color: #0B1F3A;
+    color: white;
+    text-align: center;
+    padding: 35px 8% 70px;
+}
+
+
+/* =========================================
+   NAVEGACIÓN
+   ========================================= */
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 55px;
+    margin-bottom: 70px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    color: #F28C28;
+}
+
+
+/* =========================================
+   TÍTULO CEVIDE
+   ========================================= */
+
+header h1 {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 58px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+header p {
+    margin-top: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 19px;
+    font-weight: 500;
+    color: #F28C28;
+}
+
+
+/* =========================================
+   CONTENIDO PRINCIPAL
+   ========================================= */
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 90px 50px;
+}
+
+main > h2 {
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 38px;
+    color: #0B1F3A;
+}
+
+main > p {
+    max-width: 700px;
+    margin: 0 auto 50px;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #4B5563;
+}
+
+
+/* =========================================
+   BOTONES
+   ========================================= */
+
+button {
+    padding: 15px 32px;
+    border: none;
+    border-radius: 6px;
+    background-color: #F28C28;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #D96F0B;
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   BOTÓN DE CONTACTO
+   ========================================= */
+
+.boton-contacto {
+    display: inline-block;
+    padding: 15px 32px;
+    border-radius: 6px;
+    background-color: #F28C28;
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.boton-contacto:hover {
+    background-color: #D96F0B;
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   PISOS
+   ========================================= */
+
+.piso {
+    margin-top: 80px;
+}
+
+.piso > h2 {
+    margin-bottom: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    color: #0B1F3A;
+}
+
+
+/* =========================================
+   TARJETAS DE ESPACIOS
+   ========================================= */
+
+.tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.tarjeta {
+    width: 330px;
+    background-color: white;
+    padding: 22px;
+    border-radius: 10px;
+    text-align: left;
+    border: 1px solid #E5E7EB;
+    box-shadow: 0 8px 25px rgba(11, 31, 58, 0.08);
+    transition: 0.3s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+}
+
+
+/* =========================================
+   IMAGEN / ESPACIO PARA FOTOS
+   ========================================= */
+
+.imagen-placeholder {
+    width: 100%;
+    height: 210px;
+    background-color: #E9EDF2;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6B7280;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+}
+
+.imagen-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* =========================================
+   INFORMACIÓN DE LAS TARJETAS
+   ========================================= */
+
+.tarjeta h3 {
+    margin-top: 22px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 23px;
+    color: #0B1F3A;
+}
+
+.tarjeta p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #4B5563;
+}
+
+
+/* =========================================
+   CONTACTO
+   ========================================= */
+
+#contacto {
+    background-color: #F7F8FA;
+    text-align: center;
+    padding: 90px 50px;
+}
+
+#contacto h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    color: #0B1F3A;
+}
+
+#contacto p {
+    max-width: 650px;
+    margin: 20px auto 30px;
+    font-size: 17px;
+    line-height: 1.7;
+    color: #4B5563;
+}
+
+.imagen-contacto {
+    max-width: 850px;
+    margin: 35px auto;
+}
+
+.imagen-contacto img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+
+/* =========================================
+   PÁGINA INDIVIDUAL DE CADA ESPACIO
+   ========================================= */
+
+.detalle-espacio {
+    max-width: 1050px;
+    margin: 60px auto;
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 50px;
+    align-items: start;
+    text-align: left;
+}
+
+
+/* =========================================
+   IMAGEN PRINCIPAL DEL ESPACIO
+   ========================================= */
+
+.imagen-detalle {
+    width: 100%;
+    height: 300px;
+    background-color: #E9EDF2;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.imagen-detalle img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    padding: 10px;
+}
+
+
+/* =========================================
+   INFORMACIÓN DEL ESPACIO
+   ========================================= */
+
+.informacion-espacio {
+    background-color: #F7F8FA;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.informacion-espacio h3,
+.descripcion-espacio h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #0B1F3A;
+}
+
+
+/* =========================================
+   DESCRIPCIÓN DEL ESPACIO
+   ========================================= */
+
+.descripcion-espacio {
+    max-width: 1050px;
+    margin: 0 auto 50px;
+    padding: 30px;
+    background-color: #F7F8FA;
+    border-radius: 10px;
+    text-align: left;
+}
+
+
+/* =========================================
+   CELULARES
+   ========================================= */
+
+@media (max-width: 700px) {
+
+    nav {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    header h1 {
+        font-size: 42px;
+    }
+
+    main {
+        padding: 60px 25px;
+    }
+
+    .tarjeta {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    #contacto {
+        padding: 60px 25px;
+    }
+
+    .imagen-contacto {
+        width: 100%;
+    }
+
+    .detalle-espacio {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .imagen-detalle {
+        height: 250px;
+    }
+
+}
+.encabezado-logo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.logo-cevide {
+    position: absolute;
+    left: 25px;
+    width: 450px;
+    height: 140px;
+    object-fit: contain;
+}
+.encabezado-logo h1 {
+    margin: 0;
+    text-align: center;
+}
+.logo-tecnm {
+    position: absolute;
+    right: 25px;
+    width: 180px;
+    height: 120px;
+    object-fit: contain;
+}

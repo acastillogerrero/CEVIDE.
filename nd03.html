@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <title>CEVIDE | ND03</title>
+
+    <style>
+        /* IMAGEN DEL ESPACIO */
+
+        .detalle-espacio .imagen-detalle {
+            width: 100%;
+            max-width: 500px;
+            aspect-ratio: 1 / 1;
+            overflow: hidden;
+            padding: 0;
+            margin: 0 auto;
+            border: none;
+            border-radius: 8px;
+            box-shadow: none;
+        }
+
+        .detalle-espacio .imagen-detalle img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            border: none;
+            border-radius: 8px;
+            box-shadow: none;
+        }
+
+        @media (max-width: 768px) {
+            .detalle-espacio .imagen-detalle {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="espacios.html">Espacios disponibles</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+
+        <h1>CEVIDE</h1>
+
+        <p>Información del espacio</p>
+
+    </header>
+
+
+    <main>
+
+        <h2>ND03</h2>
+
+        <p>
+            Conoce las características y posibilidades que ofrece
+            el espacio ND03.
+        </p>
+
+        <section class="detalle-espacio">
+
+            <div class="imagen-detalle">
+
+                <img
+                    src="imagen/ND03.jpeg"
+                    alt="Fotografía del espacio ND03"
+                >
+
+            </div>
+
+            <div class="informacion-espacio">
+
+                <h3>Información del espacio</h3>
+
+                <p>
+                    <strong>Nombre:</strong> ND03
+                </p>
+
+                <p>
+                    <strong>Capacidad de personas:</strong> 20 personas
+                </p>
+
+                <p>
+                    <strong>Estado:</strong> Disponibilidad sujeta a confirmación
+                </p>
+
+                <p>
+                    <strong>Características:</strong> Espacio interior de uso académico, adecuado para reuniones, actividades grupales, sesiones de trabajo y desarrollo de proyectos. Su distribución permite organizar diferentes dinámicas de colaboración.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section class="descripcion-espacio">
+
+            <h3>Descripción</h3>
+
+            <p>
+                El espacio ND03 forma parte de las instalaciones de CEVIDE
+                y está destinado al desarrollo de actividades académicas,
+                reuniones y proyectos colaborativos. Su ambiente permite
+                realizar encuentros de trabajo, organizar actividades
+                grupales y facilitar la interacción entre los participantes.
+            </p>
+
+            <p>
+                Es una alternativa para estudiantes, docentes y equipos
+                de trabajo que requieren un espacio para compartir ideas,
+                desarrollar proyectos y llevar a cabo actividades
+                de carácter académico e institucional.
+            </p>
+
+        </section>
+
+
+        <button onclick="window.location.href='espacios.html'">
+            Volver a espacios
+        </button>
+
+    </main>
+
+
+    <!-- ==============================
+         CONTACTO
+         ============================== -->
+
+    <section id="contacto">
+
+        <h2>Contacto</h2>
+
+        <p>
+            ¿Te interesa alguno de nuestros espacios?
+            Contáctanos para obtener más información.
+        </p>
+
+        <div class="imagen-contacto">
+
+            <img
+                src="imagen/Contacto-CEVIDE.png"
+                alt="Información de contacto CEVIDE"
+            >
+
+        </div>
+
+        <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=cevide_vinculacion@queretaro.tecnm.mx&su=Solicitud%20de%20información%20sobre%20espacios%20CEVIDE&body=Hola%2C%0A%0AEstoy%20interesado%2Fa%20en%20obtener%20información%20sobre%20los%20espacios%20disponibles%20en%20CEVIDE.%0A%0AQuisiera%20recibir%20más%20información%20sobre%20los%20espacios%20y%20su%20disponibilidad.%0A%0AMuchas%20gracias."
+            target="_blank"
+            class="boton-contacto">
+
+            Solicitar información
+
+        </a>
+
+    </section>
+
+</body>
+
+</html>
